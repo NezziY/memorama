@@ -15,8 +15,8 @@ export default function Card({ onPress, isTurnedOver, children }) {
 
 const styles = StyleSheet.create({
   cardUp: {
-    width: 100,
-    height: 100,
+    width: 70,
+    height: 70,
     margin: 10,
     alignItems: "center",
     justifyContent: "center",
@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#334155",
   },
   cardDown: {
-    width: 100,
-    height: 100,
+    width: 70,
+    height: 70,
     margin: 10,
     alignItems: "center",
     justifyContent: "center",

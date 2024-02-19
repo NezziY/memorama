@@ -3,7 +3,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Button } from "react-native";
 import Card from "./Card";
 
-const cards = ["🍰", "🎂", "🍨", "🍦", "🍷", "🍺"];
+const cards = ["🍰", "🎂", "🍨", "🍦", "🍬", "🍭", "🍷", "🍺"];
 
 export default function App() {
   const [board, setBoard] = React.useState(() => shuffle([...cards, ...cards]));
@@ -33,6 +33,7 @@ export default function App() {
     setMatchedCards([]);
     setScore(0);
     setSelectedCards([]);
+    setBoard(shuffle([...cards, ...cards]));
   };
 
   return (
